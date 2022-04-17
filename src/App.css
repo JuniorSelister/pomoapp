@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.PomoApp {
+  font-size: 25pt;
+  color: #FFC482;
+  font-weight: 500;
+}

@@ -1,4 +1,9 @@
-import React from 'react'
+import { React, useState } from 'react'
+
+import BtnStart from '../components/BtnStart'
+import BtnPause from '../components/BtnPause'
+
+import './Index.css'
 
 export default (props) => {
   
@@ -6,12 +11,12 @@ export default (props) => {
 
   return (
     
-    <div className='header'>
+    <div className='container'>
 
       <div className='timer'>
         <h2>{timerDefault}</h2>
-        <button>Start</button> {/* switch start to pause*/}
-
+        <BtnStart /> {/* switch start to BtnPause*/}
+        <BtnPause />
       </div>
       
     </div>
