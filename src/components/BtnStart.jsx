@@ -1,12 +1,23 @@
-import React from 'react'
+import { React, useState } from 'react'
 
+import './BtnStyle.css'
+
+// eslint-disable-next-line
 export default props => {
 
-  function onStart() {
+  const [time] = useState();
 
+  function onStart() {
+    setInterval(() => {
+      if (time > 0) {
+        console.log(time = time - 1)
+      }
+    }, 1000)
   }
 
   return (
-    <button onClick={onStart()}>Start</button>
+    <div className="btn" id='start'>
+      <span className='noselect' onClick={onStart()}>Start</span>
+    </div>
   )
 }

@@ -5,6 +5,7 @@ import BtnPause from '../components/BtnPause'
 
 import './Index.css'
 
+// eslint-disable-next-line
 export default (props) => {
   
   const [timerDefault, setTimer] = useState(30);
@@ -15,7 +16,7 @@ export default (props) => {
 
       <div className='timer'>
         <h2>{timerDefault}</h2>
-        <BtnStart /> {/* switch start to BtnPause*/}
+        <BtnStart />
         <BtnPause />
       </div>
       
