@@ -1,7 +1,12 @@
 import React from 'react'
 
 export default props => {
+
+  function onStart() {
+
+  }
+
   return (
-    <button>Start</button>
+    <button onClick={onStart()}>Start</button>
   )
 }
